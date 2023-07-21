@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: min(95%, 70rem);
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+.quote-icon{
+    position: absolute;
+    transform: translate(340px, -90px);
+    opacity: 65%;
+}
+.box{
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 45px -7px rgba(25,33,46,0.55);
+    -webkit-box-shadow: 0px 0px 45px -7px rgba(25,33,46,0.55);
+    -moz-box-shadow: 0px 0px 45px -7px rgba(25,33,46,0.55);
+}
+.user-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.user-pic{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.50);
+    border-width: 2px;
+    border-style: solid;
+}
+.user-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user-info{
+    margin-left: 15px;
+}
+.user-3{
+    color: hsl(219, 29%, 14%);
+}
+.user-3 .status{
+    color: hsl(219, 29%, 14%, 0.5);
+}
+.user-4{
+    color: hsla(217, 30%, 14%);
+}
+.user-4 .status{
+    color: hsl(219, 29%, 14%, 0.5);
+}
+.status{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 11px;
+}
+.highlighted-quote{
+    font-size: 24px;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+.box-1 .highlighted-quote{
+    font-size: 21px;
+}
+.box-5 .highlighted-quote{
+    font-size: 21px;
+}
+.sub-quote{
+    color: rgba(255, 255, 255, 0.70);
+    line-height: 19px;
+}
+.h-quote-1{
+    color: hsl(219, 29%, 14%);
+}
+.s-quote-1{
+    font-size: 15px;
+    color: hsl(217, 19%, 35%);
+}
+.box-1{
+    grid-column: span 2;
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+}
+.box-2{
+    background-color: hsl(217, 19%, 35%);
+}
+.box-3{
+    grid-row: span 2;
+    background-color: #fff;
+}
+.box-4{
+    background-color: #fff;
+}
+.box-5{
+    grid-column: span 2;
+    background-color: hsl(219, 29%, 14%);
+}
+@media only screen and (max-width: 375px){
+    body{
+        overflow: scroll;
+        width: 375px;
+        height: 2000px;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-1{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .quote-icon{
+        transform: translate(210px, -162px);
+    }
+    .box-1 .highlighted-quote{
+        font-size: 25px;
+    }
+    .box-5 .highlighted-quote{
+        font-size: 23px;
+    }
+    .sub-quote{
+        line-height: 22px;
+    }
+    .box-4{
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .box-5{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column: span 1;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 472px){
+    body{
+        overflow: scroll;
+        width: 375px;
+        height: 2000px;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-1{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .quote-icon{
+        transform: translate(210px, -162px);
+    }
+    .box-1 .highlighted-quote{
+        font-size: 25px;
+    }
+    .box-5 .highlighted-quote{
+        font-size: 23px;
+    }
+    .sub-quote{
+        line-height: 22px;
+    }
+    .s-quote-1{
+        font-size: 15px;
+    }
+    .box-4{
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .box-5{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column: span 1;
+    }
+}
